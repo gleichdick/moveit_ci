@@ -195,6 +195,7 @@ function run_early_tests() {
          code-coverage) # code coverage test requres specific compiler and linker arguments
             CFLAGS="${CFLAGS:-} --coverage"
             CXXFLAGS="${CXXFLAGS:-} --coverage"
+            LDFLAGS="${LDFLAGS:-} --coverage"
             ;;
          *)
             echo -e $(colorize RED "Unknown TEST: $t")
